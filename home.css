@@ -1,0 +1,385 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(172, 92, 226);
+}
+
+button:hover{
+    border: 2px solid rgb(172, 92, 226);
+    background: none;
+}
+
+.color-acento{
+    color: rgb(172, 92, 226)
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(172, 92, 226);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(172, 92, 226);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/videojuegos-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-bb .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#dispositivos{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#dispositivos .container{
+    padding: 150px 12px;
+}
+
+#dispositivos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#dispositivos p{
+    display: none;
+}
+
+#dispositivos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/xbox-banner.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/ps-banner.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/ns-banner.jpg");
+}
+
+#ext1:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/dim-banner.jpg");
+}
+
+#ext2:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/pc-banner.jpg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#caracteristicas a{
+    margin: 50px 0px;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+#caracteristicas a:hover{
+    text-decoration: underline;
+    color: rgb(172, 92, 226);
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 120vw;
+}
+
+#contacto h2{
+    font-size: 5vh;
+}
+
+#contacto p{
+    font-size: 2vh;
+}
+
+#contacto button{
+    font-size: 3vh;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+    
+    #somos-bb .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-bb .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-bb h2{
+        margin-top: 0px;
+    }
+
+    #somos-bb .img-container{
+        background-image: url("media/collage-vg.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 800px;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+
+    #dispositivos .disp{
+        display: flex;
+        justify-content: center;
+    }
+
+    #extras{
+        display: flex;
+        justify-content: center;
+    }
+
+    #dispositivos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #dispositivos h2{
+        font-size: 4em;
+    }
+
+    #dispositivos h3{
+        margin-top: 0;
+    }
+
+    #dispositivos .carta{
+        padding: 50px;
+    }
+
+    #caracteristicas{
+        background-image: url("media/king-book-cr.png");
+        background-repeat: no-repeat;
+        background-size: 500px 500px;
+        background-position: calc(100vw - 600px) 120px;
+        height: 850px;
+    }
+
+    #caracteristicas .container{
+        text-align: center;
+    }
+
+    #caracteristicas .titulo{
+        width: 70%;
+        text-align: initial;
+        padding-top: 0;
+        padding-left: 30px;
+    }
+
+    #caracteristicas li{
+        text-align: initial;
+        margin-top: 0;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #caracteristicas p{
+        padding: 35px;
+    }
+
+    #contacto{
+        height: 510px;
+    }
+
+    #contacto h2{
+        font-size: 5em;
+    }
+
+    #contacto p{
+        max-width: 70%;
+    }
+
+    #contacto button{
+        font-size: 2em;
+    }
+
+    #footer .container{
+        justify-content: flex-end;
+    }
+
+    #footer p{
+        padding: 2px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1200px){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}

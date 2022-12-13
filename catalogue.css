@@ -1,0 +1,426 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+img{ border: 6px solid rgb(186, 120, 248);}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(172, 92, 226);
+}
+
+button:hover{
+    border: 2px solid rgb(172, 92, 226);
+    background: none;
+}
+
+.color-acento{
+    color: rgb(172, 92, 226)
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(172, 92, 226);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(172, 92, 226);
+}
+
+#hero{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ), url("media/fondo-degradado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.slider{
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    height: 900px;
+    overflow: hidden;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 500%;
+    animation: slider 20s infinite alternate;
+    animation-timing-function: linear;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider li img{
+    width: 100%;
+}
+
+@keyframes slider{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+#limitados{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#limitados .container{
+    padding: 120px 12px;
+}
+
+#limitados h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#limitados p{
+    display: block;
+}
+
+#limitados .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/promo-01.jpeg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/promo-02.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/promo-03.jpg");
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/promo-04.jpg");
+}
+
+.carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/promo-05.jpg");
+}
+
+#plataformas{
+    text-align: center;
+    color: white;
+
+}
+
+#plataformas .container{
+    padding: 80px 12px;
+}
+
+#plataformas h2{
+    color: black;
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#plataformas p{
+    display: none;
+}
+
+#plataformas .barra{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.barra:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/xbox-banner.jpg");
+}
+
+.barra:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/ps-banner.jpg");
+}
+
+.barra:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/ns-banner.jpg");
+}
+
+#ext1:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/dim-banner.jpg");
+}
+
+#ext2:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/pc-banner.jpg");
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero{
+        height: 123vh;
+    }
+
+    #hero h2{
+        padding-top: 70px;
+        font-size: 5em;
+    }
+
+    #limitados .limits{
+        display: flex;
+        justify-content: center;
+    }
+
+    #limitados p{
+        margin-bottom: 30px;
+    }
+
+    #limitados h2{
+        font-size: 4em;
+    }
+
+    #limitados h3{
+        margin-top: 0;
+    }
+
+    #limitados .carta{
+        padding: 50px;
+    }
+
+    #plataformas{
+        padding: 130px 0px;
+    }
+
+    #plataformas .plataforms{
+        display: flex;
+        justify-content: center;
+    }
+
+    #extras{
+        display: flex;
+        justify-content: center;
+    }
+
+    #plataformas p{
+        display: block;
+        margin-bottom: 30px;
+        color: black;
+    }
+
+    #plataformas button:hover{
+        color: black;
+    }
+
+    #plataformas h2{
+        font-size: 4em;
+    }
+
+    #plataformas h3{
+        margin-top: 0;
+        padding-bottom: 40px;
+    }
+
+    #plataformas .barra{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(222, 220, 224);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .barra:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("media/xbox-banner.jpg");
+    }
+    
+    .barra:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("media/ps-banner.jpg");
+    }
+    
+    .barra:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("media/ns-banner.jpg");
+    }
+    
+    #ext1:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("media/dim-banner.jpg");
+    }
+    
+    #ext2:last-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url("media/pc-banner.jpg");
+    }
+
+    #footer .container{
+        justify-content: flex-end;
+    }
+
+    #footer p{
+        padding: 2px;
+        font-size: 1em;
+    }
+}

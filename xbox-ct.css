@@ -1,0 +1,439 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+img{ display: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(172, 92, 226);
+}
+
+button:hover{
+    border: 2px solid rgb(172, 92, 226);
+    background: none;
+}
+
+.color-acento{
+    color: rgb(172, 92, 226)
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(172, 92, 226);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(172, 92, 226);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/xbox-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#articulos{
+    color: white;
+    text-align: center;
+}
+
+#articulos .container{
+    padding: 150px 12px;
+}
+
+#articulos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    color: black;
+}
+
+#articulos p{
+    display: none;
+}
+
+#articulos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/fort-background.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/wz-background.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/mine-background.jpg");
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/gow-background.jpg");
+}
+
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/roblox-background.jpg");
+}
+
+.carta:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/fallg-background.jpg");
+}
+
+.carta:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("media/xbox-background.jpg");
+}
+
+#articulos .imagen{
+    align-content:center;
+    overflow:hidden;
+    width: 100%;
+    height: 240px;
+}
+
+#acerca .container{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#soporte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 120vw;
+}
+
+#soporte h2{
+    font-size: 5vh;
+}
+
+#soporte p{
+    font-size: 2vh;
+}
+
+#soporte button{
+    font-size: 3vh;
+}
+
+#soporte button:hover{
+    color: black;
+}
+
+#soporte a{
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#soporte a:hover{
+    color: rgb(172, 92, 226);
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #articulos .articles{
+        justify-content: center;
+    }
+
+    #articulos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #articulos h2{
+        font-size: 4em;
+    }
+
+    #articulos h3{
+        margin-top: 0;
+    }
+
+    #articulos .carta{
+        padding: 50px;
+        margin: 80px;
+    }
+
+    #acerca{
+        background-color: rgb(30, 30, 30);
+    }
+
+    #acerca .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #acerca .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #acerca h2{
+        margin-top: 0px;
+    }
+
+    #acerca .img-container{
+        background-image: url("media/xbox-console.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 800px;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+
+    #soporte{
+        height: 510px;
+    }
+
+    #soporte h2{
+        font-size: 5em;
+    }
+
+    #soporte p{
+        max-width: 70%;
+    }
+
+    #soporte button{
+        font-size: 2em;
+    }
+
+    #footer .container{
+        justify-content: flex-end;
+    }
+
+    #footer p{
+        padding: 6px;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1200px){
+    img{
+        display: flex;
+        position: absolute;
+        height: 345px;
+    }
+    
+    .a1{
+        top: 1201px;
+        left: 1140px;
+    }
+
+    .a2{
+        top: 1201px;
+        left: 400px;
+    }
+
+    .b1{
+        top: 1577px;
+        left: 1140px;
+    }
+
+    .b2{
+        top: 1577px;
+        left: 400px;
+    }
+
+    .c1{
+        top: 1953px;
+        left: 1140px;
+    }
+
+    .c2{
+        top: 1953px;
+        left: 400px;
+    }
+
+    .d1{
+        top: 2329px;
+        left: 1140px;
+    }
+
+    .d2{
+        top: 2329px;
+        left: 400px;
+    }
+
+    .e1{
+        height: 360px;
+        top: 2713px;
+        left: 1140px;
+    }
+
+    .e2{
+        height: 360px;
+        top: 2713px;
+        left: 400px;
+    }
+
+    .f1{
+        height: 390px;
+        top: 3059px;
+        left: 1140px;
+    }
+
+    .f2{
+        height: 370px;
+        top: 3079px;
+        left: 400px;
+    }
+
+    .g1{
+        height: 360px;
+        top: 3472px;
+        left: 1140px;
+    }
+
+    .g2{
+        height: 400px;
+        top: 3461px;
+        left: 400px;
+    }
+}
